@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 26 Oct 2018 10:02:32 +0100</lastBuildDate>
     
 	<atom:link href="https://github.com/mark-hammond/mark-hammond.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2</title>
+      <link>https://github.com/mark-hammond/mark-hammond.github.io/publication_types/2/</link>
+      <pubDate>Fri, 26 Oct 2018 10:02:32 +0100</pubDate>
+      
+      <guid>https://github.com/mark-hammond/mark-hammond.github.io/publication_types/2/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
