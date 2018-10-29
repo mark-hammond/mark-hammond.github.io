@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mark Hammond on Mark Hammond</title>
+    <title>Posts on Mark Hammond</title>
     <link>https://github.com/mark-hammond/mark-hammond.github.io/</link>
-    <description>Recent content in Mark Hammond on Mark Hammond</description>
+    <description>Recent content in Posts on Mark Hammond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0100</lastBuildDate>
-    <atom:link href="/mark-hammond/mark-hammond.github.io/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Wave-Mean Flow Interactions in the Atmospheric Circulation of Tidally Locked Planets</title>
-      <link>https://github.com/mark-hammond/mark-hammond.github.io/post/wave-mean/</link>
+      <link>https://github.com/mark-hammond/mark-hammond.github.io/wave-mean/</link>
       <pubDate>Fri, 26 Oct 2018 15:19:18 +0100</pubDate>
       
-      <guid>https://github.com/mark-hammond/mark-hammond.github.io/post/wave-mean/</guid>
+      <guid>https://github.com/mark-hammond/mark-hammond.github.io/wave-mean/</guid>
       <description>&lt;p&gt;Our paper on wave-mean flow interaction on tidally locked planets has been accepted by ApJ – here’s the preprint!&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -60,29 +60,11 @@
     </item>
     
     <item>
-      <title>Wave-Mean Flow Interactions in the Atmospheric Circulation of Tidally Locked Planets</title>
-      <link>https://github.com/mark-hammond/mark-hammond.github.io/publication/wave-mean-planets/</link>
-      <pubDate>Fri, 26 Oct 2018 10:02:32 +0100</pubDate>
-      
-      <guid>https://github.com/mark-hammond/mark-hammond.github.io/publication/wave-mean-planets/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Atmospheric Circulation of Tide-Locked Exoplanets</title>
-      <link>https://github.com/mark-hammond/mark-hammond.github.io/publication/tide-locked-review/</link>
-      <pubDate>Sun, 09 Sep 2018 10:02:32 +0100</pubDate>
-      
-      <guid>https://github.com/mark-hammond/mark-hammond.github.io/publication/tide-locked-review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Linking the Climate and Thermal Phase Curve of 55 Cancri e</title>
-      <link>https://github.com/mark-hammond/mark-hammond.github.io/post/55cnce/</link>
+      <link>https://github.com/mark-hammond/mark-hammond.github.io/55cnce/</link>
       <pubDate>Thu, 12 Oct 2017 15:19:18 +0100</pubDate>
       
-      <guid>https://github.com/mark-hammond/mark-hammond.github.io/post/55cnce/</guid>
+      <guid>https://github.com/mark-hammond/mark-hammond.github.io/55cnce/</guid>
       <description>&lt;p&gt;Our paper on the climate of 55 Cancri e has been accepted by ApJ – here’s the preprint!&lt;/p&gt;
 
 &lt;p&gt;We found that the observations of Demory (2016) did not rule out an atmosphere, and that our GCM results could be consistent given an atmosphere of several bar, a mean-molecular weight of about 5 g/mol, and cloud formation high on the night-side.&lt;/p&gt;
@@ -90,15 +72,6 @@
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Another paper on 55 Cancri e also appeared at the same time – “A Case for an Atmosphere on Super-Earth 55 Cancri e”. This is great as we’re (obviously) interested in the possbility of an atmosphere! It looks like we may have reached some similar conclusions by approaching the problem in different ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linking the Climate and Thermal Phase Curve of 55 Cancri e</title>
-      <link>https://github.com/mark-hammond/mark-hammond.github.io/publication/linking-55cnce/</link>
-      <pubDate>Tue, 10 Oct 2017 10:02:32 +0100</pubDate>
-      
-      <guid>https://github.com/mark-hammond/mark-hammond.github.io/publication/linking-55cnce/</guid>
-      <description></description>
     </item>
     
   </channel>
