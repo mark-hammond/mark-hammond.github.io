@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Mark Hammond</title>
+    <link>https://mark-hammond.github.io/</link>
+    <description>Recent content on Mark Hammond</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mark-hammond.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://mark-hammond.github.io/publications/</link>
+      <pubDate>Wed, 06 Oct 2021 09:46:15 +0100</pubDate>
+      
+      <guid>https://mark-hammond.github.io/publications/</guid>
+      <description>https://scholar.google.co.uk/citations?user=g0t5hggAAAAJ&amp;amp;hl=en</description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://mark-hammond.github.io/code/</link>
+      <pubDate>Wed, 06 Oct 2021 09:46:09 +0100</pubDate>
+      
+      <guid>https://mark-hammond.github.io/code/</guid>
+      <description>https://github.com/mark-hammond/</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mark-hammond.github.io/about/</link>
+      <pubDate>Wed, 06 Oct 2021 09:25:45 +0100</pubDate>
+      
+      <guid>https://mark-hammond.github.io/about/</guid>
+      <description>I am a Junior Research Fellow at Christ Church College at the University of Oxford. I work in Atmospheric, Ocean, and Planetary Physics in the Department of Physics.
+https://www.chch.ox.ac.uk/staff/dr-mark-hammond</description>
+    </item>
+    
   </channel>
 </rss>

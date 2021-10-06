@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://mark-hammond.github.io/publications/</loc>
+    <lastmod>2021-10-06T09:46:15+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://mark-hammond.github.io/code/</loc>
+    <lastmod>2021-10-06T09:46:09+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://mark-hammond.github.io/about/</loc>
+    <lastmod>2021-10-06T09:25:45+01:00</lastmod>
+  </url><url>
+    <loc>https://mark-hammond.github.io/categories/</loc>
+  </url><url>
+    <loc>https://mark-hammond.github.io/</loc>
+  </url><url>
+    <loc>https://mark-hammond.github.io/tags/</loc>
   </url>
 </urlset>
