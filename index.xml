@@ -7,34 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://mark-hammond.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Publications</title>
-      <link>https://mark-hammond.github.io/publications/</link>
-      <pubDate>Wed, 06 Oct 2021 09:46:15 +0100</pubDate>
-      
-      <guid>https://mark-hammond.github.io/publications/</guid>
-      <description>My Google Scholar profile
-2022 Lewis, NT; Hammond, M, &amp;ldquo;Temperature Structures Associated with Different Components of the Atmospheric Circulation on Tidally Locked Exoplanets&amp;rdquo;, submitted
-Hammond, M; Abbot, DS, &amp;ldquo;Numerical dissipation strongly affects the equatorial jet speed in simulations of hot Jupiter atmospheres&amp;rdquo;, MNRAS, 2022
-Zieba, S; Zilinskas, M; Kreidberg, L, et al. &amp;ldquo;K2 and Spitzer phase curves of the rocky ultra-short-period planet K2-141 b hint at a tenuous rock vapor atmosphere&amp;rdquo;, A&amp;amp;A, 2022</description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>https://mark-hammond.github.io/code/</link>
-      <pubDate>Wed, 06 Oct 2021 09:46:09 +0100</pubDate>
-      
-      <guid>https://mark-hammond.github.io/code/</guid>
-      <description>https://github.com/mark-hammond/</description>
-    </item>
-    
-    <item>
       <title>About</title>
-      <link>https://mark-hammond.github.io/about/</link>
+      <link>https://mark-hammond.github.io/</link>
       <pubDate>Wed, 06 Oct 2021 09:25:45 +0100</pubDate>
       
-      <guid>https://mark-hammond.github.io/about/</guid>
+      <guid>https://mark-hammond.github.io/</guid>
       <description>I am a Junior Research Fellow at Christ Church College at the University of Oxford. I work in Atmospheric, Ocean, and Planetary Physics in the Department of Physics.
-I study the atmospheres of exoplanets, using mathematical and computational models to understand their atmospheric circulation. I am particularly interested in the global atmospheric dynamics of tidally locked planets, which always present the same side to their host star. I have published on topics such as the observable features of lava planets, the mechanisms for the formation of atmospheric jets on tidally locked planets, and a method for decomposing their atmospheric circulation into physically distinct components.</description>
+I study the atmospheres of exoplanets, using mathematical and computational models to understand their atmospheric circulation. I am particularly interested in the global atmospheric dynamics of tidally locked planets, which always present the same side to their host star.
+I have published on topics such as the observable features of lava planets, the mechanisms for the formation of atmospheric jets on tidally locked planets, and a method for decomposing their atmospheric circulation into physically distinct components.</description>
     </item>
     
   </channel>
