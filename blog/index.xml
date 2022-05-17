@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mark Hammond</title>
-    <link>https://mark-hammond.github.io/</link>
-    <description>Recent content on Mark Hammond</description>
+    <title>Blog on Mark Hammond</title>
+    <link>https://mark-hammond.github.io/blog/</link>
+    <description>Recent content in Blog on Mark Hammond</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 29 Jan 2022 09:46:09 +0100</lastBuildDate><atom:link href="https://mark-hammond.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jan 2022 09:46:09 +0100</lastBuildDate><atom:link href="https://mark-hammond.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Numerical dissipation strongly affects the equatorial jet speed...</title>
       <link>https://mark-hammond.github.io/blog/paper-diss/</link>
@@ -16,44 +16,6 @@
       <description>A new paper with Dorian Abbot, finished up after most of the work was done in my stint at Chicago in 2020. Something of a technical study into 3D modelling of hot Jupiter atmospheres, and hopefully laying the groundwork for a full study of their angular momentum budgets and equatorial jets in the future. Link at https://academic.oup.com/mnras/article/511/2/2313/6517472.
 Abstract
 Hot Jupiters are tidally locked gaseous exoplanets with atmospheric circulations dominated by a super-rotating equatorial jet.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://mark-hammond.github.io/publications/</link>
-      <pubDate>Wed, 06 Oct 2021 09:46:15 +0100</pubDate>
-      
-      <guid>https://mark-hammond.github.io/publications/</guid>
-      <description>My Google Scholar profile
-2022 Lewis, NT; Hammond, M, &amp;ldquo;Temperature Structures Associated with Different Components of the Atmospheric Circulation on Tidally Locked Exoplanets&amp;rdquo;, submitted
-Hammond, M; Abbot, DS, &amp;ldquo;Numerical dissipation strongly affects the equatorial jet speed in simulations of hot Jupiter atmospheres&amp;rdquo;, MNRAS, 2022
-Zieba, S; Zilinskas, M; Kreidberg, L, et al. &amp;ldquo;K2 and Spitzer phase curves of the rocky ultra-short-period planet K2-141 b hint at a tenuous rock vapor atmosphere&amp;rdquo;, A&amp;amp;A, 2022</description>
-    </item>
-    
-    <item>
-      <title>CV</title>
-      <link>https://mark-hammond.github.io/cv/</link>
-      <pubDate>Wed, 06 Oct 2021 09:46:09 +0100</pubDate>
-      
-      <guid>https://mark-hammond.github.io/cv/</guid>
-      <description>2021-2024: Junior Research Fellow, Christ Church, University of Oxford
-2021: Postdoctoral Researcher, University of Bristol
-2020-2021: Lindemann Fellow, University of Chicago
-2016-2020: PhD Atmospheric, Oceanic, and Planetary Physics, University of Oxford
-2012-2016: BA Natural Sciences, MSci Physics, University of Cambridge</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://mark-hammond.github.io/contact/</link>
-      <pubDate>Wed, 06 Oct 2021 09:25:45 +0100</pubDate>
-      
-      <guid>https://mark-hammond.github.io/contact/</guid>
-      <description>mark.hammond(at)physics.ox.ac.uk
-mark.hammond(at)chch.ox.ac.uk
-twitter.com/mark_planets
-github.com/mark-hammond
-chch.ox.ac.uk/staff/dr-mark-hammond</description>
     </item>
     
     <item>

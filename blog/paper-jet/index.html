@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Mark Hammond">
+<meta name="description" content="A study that I greatly enjoyed, on the formation of equatorial jets on rocky tidally locked planets. We used the highly impressive Dedalus code and came up with a mechanism for the formation of jets in idealised atmospheres. A follow-up on gaseous planets to come! Link at https://iopscience.iop.org/article/10.3847/1538-4357/abb08b/meta.
+Abstract
+The atmospheric circulation of tidally locked planets is dominated by a superrotating eastward equatorial jet. We develop a predictive theory for the formation of this jet, proposing a mechanism in which the three-dimensional stationary waves induced by the day–night forcing gradient produce an equatorial acceleration.">
+
+<meta property="og:title" content="The Equatorial Jet Speed on Tidally Locked Planets. I. Terrestrial Planets" />
+<meta property="og:description" content="A study that I greatly enjoyed, on the formation of equatorial jets on rocky tidally locked planets. We used the highly impressive Dedalus code and came up with a mechanism for the formation of jets in idealised atmospheres. A follow-up on gaseous planets to come! Link at https://iopscience.iop.org/article/10.3847/1538-4357/abb08b/meta.
+Abstract
+The atmospheric circulation of tidally locked planets is dominated by a superrotating eastward equatorial jet. We develop a predictive theory for the formation of this jet, proposing a mechanism in which the three-dimensional stationary waves induced by the day–night forcing gradient produce an equatorial acceleration." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mark-hammond.github.io/blog/paper-jet/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2020-09-23T09:46:09+01:00" />
+<meta property="article:modified_time" content="2020-09-23T09:46:09+01:00" />
+
+
+
+<title>
+
+
+     The Equatorial Jet Speed on Tidally Locked Planets. I. Terrestrial Planets 
+
+</title>
+<link rel="canonical" href="https://mark-hammond.github.io/blog/paper-jet/">
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/reset.css?t=2022-05-17%2010%3a19%3a39.173395%20%2b0100%20BST%20m%3d%2b0.058599828">
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/pygments.css?t=2022-05-17%2010%3a19%3a39.173395%20%2b0100%20BST%20m%3d%2b0.058599828">
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/main.css?t=2022-05-17%2010%3a19%3a39.173395%20%2b0100%20BST%20m%3d%2b0.058599828">
+    
+        <link rel="stylesheet" href="https://mark-hammond.github.io/css/override.css?t=2022-05-17%2010%3a19%3a39.173395%20%2b0100%20BST%20m%3d%2b0.058599828">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://mark-hammond.github.io/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="https://mark-hammond.github.io/"><img class="avatar" src="https://mark-hammond.github.io/img/mdh-profile-photo.jpg" srcset="https://mark-hammond.github.io/img/mdh-profile-photo.jpg 1x"></a>
+            
+            <a href="https://mark-hammond.github.io/"><div class="name">Mark Hammond</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-home"><a href="https://mark-hammond.github.io/"><span>Home</span></a></li>
+                    
+                        
+                        <li class="nav-cv"><a href="https://mark-hammond.github.io/cv/"><span>CV</span></a></li>
+                    
+                        
+                        <li class="nav-publications"><a href="https://mark-hammond.github.io/publications/"><span>Publications</span></a></li>
+                    
+                        
+                        <li class="nav-contact"><a href="https://mark-hammond.github.io/contact/"><span>Contact</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/mark-hammond" target="_blank" rel="noopener"><img class="icon" src="https://mark-hammond.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/mark_planets" target="_blank" rel="noopener"><img class="icon" src="https://mark-hammond.github.io/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:mark.hammond@physics.ox.ac.uk"><img class="icon" src="https://mark-hammond.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    The Equatorial Jet Speed on Tidally Locked Planets. I. Terrestrial Planets
+
+</div>
+
+                    <div class="initials"><a href="https://mark-hammond.github.io/">ad</a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Wed Sep 23 2020 09:46:09 BST'>Sep 23, 2020</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>A study that I greatly enjoyed, on the formation of equatorial jets on rocky tidally locked planets. We used the highly impressive Dedalus code and came up with a mechanism for the formation of jets in idealised atmospheres. A follow-up on gaseous planets to come! Link at <a href="https://iopscience.iop.org/article/10.3847/1538-4357/abb08b/meta">https://iopscience.iop.org/article/10.3847/1538-4357/abb08b/meta</a>.</p>
+<p><strong>Abstract</strong></p>
+<p>The atmospheric circulation of tidally locked planets is dominated by a superrotating eastward equatorial jet. We develop a predictive theory for the formation of this jet, proposing a mechanism in which the three-dimensional stationary waves induced by the day–night forcing gradient produce an equatorial acceleration. This is balanced in equilibrium by an interaction between the resulting jet and the vertical motion of the atmosphere. The three-dimensional structure of the zonal acceleration is vital to this mechanism. We demonstrate this mechanism in a hierarchy of models. We calculate the three-dimensional stationary waves induced by the forcing on these planets and show the vertical structure of the zonal acceleration produced by these waves, which we use to suggest a mechanism for how the jet forms. General circulation model simulations are used to confirm the equilibrium state predicted by this mechanism, where the acceleration from these waves is balanced by an interaction between the zonal-mean vertical velocity and the jet. We derive a simple model of this using the &ldquo;Weak Temperature Gradient&rdquo; approximation, which gives an estimate of the jet speed on a terrestrial tidally locked planet. We conclude that the proposed mechanism is a good description of the formation of an equatorial jet on a terrestrial tidally locked planet and should be useful for interpreting observations and simulations of these planets. The mechanism requires assumptions such as a large equatorial Rossby radius and weak acceleration due to transient waves, and a different mechanism may produce the equatorial jets on gaseous tidally locked planets.</p>
+
+                <br>
+                
+                <p class="back-to-posts"><a href="https://mark-hammond.github.io/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+

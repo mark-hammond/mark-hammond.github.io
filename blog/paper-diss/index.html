@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="author" content="Mark Hammond">
+<meta name="description" content="A new paper with Dorian Abbot, finished up after most of the work was done in my stint at Chicago in 2020. Something of a technical study into 3D modelling of hot Jupiter atmospheres, and hopefully laying the groundwork for a full study of their angular momentum budgets and equatorial jets in the future. Link at https://academic.oup.com/mnras/article/511/2/2313/6517472.
+Abstract
+Hot Jupiters are tidally locked gaseous exoplanets with atmospheric circulations dominated by a super-rotating equatorial jet.">
+
+<meta property="og:title" content="Numerical dissipation strongly affects the equatorial jet speed..." />
+<meta property="og:description" content="A new paper with Dorian Abbot, finished up after most of the work was done in my stint at Chicago in 2020. Something of a technical study into 3D modelling of hot Jupiter atmospheres, and hopefully laying the groundwork for a full study of their angular momentum budgets and equatorial jets in the future. Link at https://academic.oup.com/mnras/article/511/2/2313/6517472.
+Abstract
+Hot Jupiters are tidally locked gaseous exoplanets with atmospheric circulations dominated by a super-rotating equatorial jet." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mark-hammond.github.io/blog/paper-diss/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-01-29T09:46:09+01:00" />
+<meta property="article:modified_time" content="2022-01-29T09:46:09+01:00" />
+
+
+
+<title>
+
+
+     Numerical dissipation strongly affects the equatorial jet speed... 
+
+</title>
+<link rel="canonical" href="https://mark-hammond.github.io/blog/paper-diss/">
+
+
+
+
+
+
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/reset.css?t=2022-05-17%2010%3a19%3a39.16816%20%2b0100%20BST%20m%3d%2b0.053364763">
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/pygments.css?t=2022-05-17%2010%3a19%3a39.16816%20%2b0100%20BST%20m%3d%2b0.053364763">
+    <link rel="stylesheet" href="https://mark-hammond.github.io/css/main.css?t=2022-05-17%2010%3a19%3a39.16816%20%2b0100%20BST%20m%3d%2b0.053364763">
+    
+        <link rel="stylesheet" href="https://mark-hammond.github.io/css/override.css?t=2022-05-17%2010%3a19%3a39.16816%20%2b0100%20BST%20m%3d%2b0.053364763">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://mark-hammond.github.io/img/favicon.ico"
+
+>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body lang="en">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+                
+                
+                
+                
+                
+                    
+                
+                    
+                
+                
+                <a href="https://mark-hammond.github.io/"><img class="avatar" src="https://mark-hammond.github.io/img/mdh-profile-photo.jpg" srcset="https://mark-hammond.github.io/img/mdh-profile-photo.jpg 1x"></a>
+            
+            <a href="https://mark-hammond.github.io/"><div class="name">Mark Hammond</div></a>
+            
+            <nav>
+                <ul>
+                    
+                        
+                        <li class="nav-home"><a href="https://mark-hammond.github.io/"><span>Home</span></a></li>
+                    
+                        
+                        <li class="nav-cv"><a href="https://mark-hammond.github.io/cv/"><span>CV</span></a></li>
+                    
+                        
+                        <li class="nav-publications"><a href="https://mark-hammond.github.io/publications/"><span>Publications</span></a></li>
+                    
+                        
+                        <li class="nav-contact"><a href="https://mark-hammond.github.io/contact/"><span>Contact</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+        
+            <a href="//github.com/mark-hammond" target="_blank" rel="noopener"><img class="icon" src="https://mark-hammond.github.io/img/github.svg" alt="github" /></a>
+        
+
+        
+
+        
+            <a href="//twitter.com/mark_planets" target="_blank" rel="noopener"><img class="icon" src="https://mark-hammond.github.io/img/twitter.svg" alt="twitter" /></a>
+        
+
+	
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="mailto:mark.hammond@physics.ox.ac.uk"><img class="icon" src="https://mark-hammond.github.io/img/email.svg" alt="email" /></a>
+        
+
+        
+        
+        
+
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Numerical dissipation strongly affects the equatorial jet speed...
+
+</div>
+
+                    <div class="initials"><a href="https://mark-hammond.github.io/">ad</a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sat Jan 29 2022 09:46:09 &#43;0100'>Jan 29, 2022</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>2 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p>A new paper with Dorian Abbot, finished up after most of the work was done in my stint at Chicago in 2020. Something of a technical study into 3D modelling of hot Jupiter atmospheres, and hopefully laying the groundwork for a full study of their angular momentum budgets and equatorial jets in the future. Link at <a href="https://academic.oup.com/mnras/article/511/2/2313/6517472">https://academic.oup.com/mnras/article/511/2/2313/6517472</a>.</p>
+<p><strong>Abstract</strong></p>
+<p>Hot Jupiters are tidally locked gaseous exoplanets with atmospheric circulations dominated by a super-rotating equatorial jet. Their global circulation is often studied with simulations in 3D general circulation models (GCMs). Energy builds up at the smallest scales in these models and must be dissipated. Many models use ‘hyperdiffusion’ for this, which applies a tendency to the prognostic variables based on a high-order Laplacian operator. This removes the unrealistic and unstable build-up of energy at small scales, and ideally does not affect the large-scale circulation. In this study, we show that hyperdiffusion can in fact affect the large-scale circulation of simulations of hot Jupiters. These planets have large velocity gradients, so hyperdiffusion can produce a momentum tendency that may affect the largest scales. We analyse four simulations with different hyperdiffusion parameters in the GCM THOR. These show that hyperdiffusion can affect the atmospheric zonal momentum budget as strongly as the physical forcing. The hyperdiffusion slows down and spreads out the jet, reducing its speed by more than 50 per cent at some levels. We analyse simulations from the GCMs MITgcm and Exo-FMS and compare the effects of their different dissipation methods. The drag on the jet due to hyperdiffusion can be reduced by using a weaker hyperdiffusion coefficient, a higher resolution, or higher order diffusion. We aim to provide a basis for a study to investigate the ‘real’ momentum budget and jet speed of hot Jupiters. This study shows the need to examine long-held modelling assumptions when studying novel exoplanets.</p>
+
+                <br>
+                
+                <p class="back-to-posts"><a href="https://mark-hammond.github.io/blog">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    
+  
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+
+</body>
+</html>
+
